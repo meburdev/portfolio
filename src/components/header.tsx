@@ -1,0 +1,25 @@
+import React from "react";
+import Link from "next/link";
+
+const HeaderComponent: React.FC = () => {
+  return (
+    <header id="header">
+      <div className="flex justify-between text-white min-h-60 w-full pb-5 md:pb-5 px-4 shadow-md h-full">
+        <div className="text-2xl flex-col space-y-0.5">
+          <div className="font-extrabold">Levi Medina,</div>
+          <div className="text-gray-400">Developer</div>
+        </div>
+        <div className="text-2xl font-bold">
+          <Link
+            href="/#experience"
+            className="hover:text-zinc-500 transition-colors duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-white"
+          >
+            About
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default HeaderComponent;
