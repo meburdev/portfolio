@@ -6,104 +6,51 @@ import { MOCK_EXPERIENCE } from "@/data/experience"; // Carga los datos mock
 const ExperienceSection: React.FC = () => {
   const { t } = useTranslation("common");
 
-  const companyInfoBitecla = (
-    <div className="text-sm">
-      <div className="font-extrabold">Experience</div>
-      <div className="py-5 font-semibold text-zinc-500">
-        <div>Senior Producer at Bitecla</div>
-        <div>Senior Producer at Bitecla</div>
-        <div>Senior Producer at Bitecla</div>
-      </div>
-    </div>
-  );
-  const workDoneInfoBitecla = (
-    <div>
-      <ul className="list-disc list-inside space-y-2">
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          repudiandae dolorem dolor maiores laborum ea cumque incidunt alias,
-          quasi animi deserunt dolores expedita aliquam! Culpa porro veritatis
-          vel aut consequuntur
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          veritatis vel aut consequuntur
-        </li>
-      </ul>
-    </div>
-  );
+  const experienceItems = [] as Array<{
+    companyInfo: React.ReactNode;
+    workDoneInfo: React.ReactNode;
+  }>;
 
-  const companyInfoZippitech = (
-    <div className="text-sm">
-      <div className="font-extrabold">Experience</div>
-      <div className="py-5 font-semibold text-zinc-500">
-        <div>Senior Producer at Bitecla</div>
-        <div>Senior Producer at Bitecla</div>
-        <div>Senior Producer at Bitecla</div>
+  MOCK_EXPERIENCE.forEach((element) => {
+    const companyInfo = (
+      <div className="text-sm">
+        <div className="font-extrabold">{element.company}</div>
+        <div className="py-5 font-semibold text-zinc-500">
+          <div>{t(element.position)}</div>
+          <div>{element.companyLocation}</div>
+          <div>{t(element.duration)}</div>
+        </div>
       </div>
-    </div>
-  );
-  const workDoneInfoZippitech = (
-    <div>
-      <ul className="list-disc list-inside space-y-2">
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          repudiandae dolorem dolor maiores laborum ea cumque incidunt alias,
-          quasi animi deserunt dolores expedita aliquam! Culpa porro veritatis
-          vel aut consequuntur
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          veritatis vel aut consequuntur
-        </li>
-      </ul>
-    </div>
-  );
+    );
+    const workDoneInfo = (
+      <div>
+        <ul className="list-disc list-inside space-y-2">
+          {element.functions.map((func, index) => (
+            <li key={index}>{t(func)}</li>
+          ))}
+        </ul>
+        <div className="text-sm pt-5">
+          <span className="font-semibold">{t("skills-include")}: </span>
+          {element.technologies.join(", ")}
+        </div>
+      </div>
+    );
 
-  const companyInfoCorpoelec = (
-    <div className="text-sm">
-      <h2 className="font-extrabold">Experience</h2>
-      <div className="py-5 font-semibold text-zinc-500">
-        <div>Senior Producer at Bitecla</div>
-        <div>Senior Producer at Bitecla</div>
-        <div>Senior Producer at Bitecla</div>
-      </div>
-    </div>
-  );
-  const workDoneInfoCorpoelec = (
-    <div>
-      <ul className="list-disc list-inside space-y-2">
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          repudiandae dolorem dolor maiores laborum ea cumque incidunt alias,
-          quasi animi deserunt dolores expedita aliquam! Culpa porro veritatis
-          vel aut consequuntur
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro
-          veritatis vel aut consequuntur
-        </li>
-      </ul>
-    </div>
-  );
+    experienceItems.push({ companyInfo, workDoneInfo });
+  });
 
   return (
     <section id="experience" className="border-t border-zinc-700">
-      <h1 className="text-xs font-extrabold pt-5 pb-10">{t("experience")}</h1>
-      <DefaultBodySection
-        leftContent={companyInfoBitecla}
-        rightContent={workDoneInfoBitecla}
-      />
-
-      <DefaultBodySection
-        leftContent={companyInfoZippitech}
-        rightContent={workDoneInfoZippitech}
-      />
-
-      <DefaultBodySection
-        leftContent={companyInfoCorpoelec}
-        rightContent={workDoneInfoCorpoelec}
-      />
+      <h1 className="text-xs font-extrabold pt-5 pb-10">
+        {t("experience.title")}
+      </h1>
+      {experienceItems.map((element, index) => (
+        <DefaultBodySection
+          key={index}
+          leftContent={element.companyInfo}
+          rightContent={element.workDoneInfo}
+        />
+      ))}
     </section>
   );
 };

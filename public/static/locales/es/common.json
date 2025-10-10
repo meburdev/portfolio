@@ -1,12 +1,66 @@
 {
+  "developer": "Desarrollador Full-stack",
   "education": "Educación",
-  "experience": "Experiencia",
   "contact-me": "Contactame",
-  "skills": "Habilidades",
+  "skills-include": "Habilidades usadas",
   "personal-profile": "Desarrollador Full-stack con más de 2 años de experiencia, especializado en Frontend/Backend. Mi experiencia en desarrollo y soporte garantiza la estabilidad del sistema y la resolución proactiva.",
   "language.selector": "Seleccionar Idioma",
   "flag": {
     "us": "Español",
     "es": "Inglés"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "bitecla": {
+      "position": "Desarrollador Web (Soporte)",
+      "duration": "2 años y 6 meses",
+      "subcontracted": "Subcontratado para Singular Factory de Canarias (España), prestando servicio a clientes internacionales como Planimatik (EE. UU. y UE) y Transborder (Colombia).",
+      "f1": "Desarrollo de nuevas funcionalidades y módulos para la aplicación, enfocado en el Front-end.",
+      "f2": "Corrección de errores (bugs) en el sistema, mejorando la usabilidad y el rendimiento.",
+      "f3": "Gestión y manipulación de bases de datos para exportación de data a clientes.",
+      "f4": "Acceso y manejo de servidores desplegados para la ejecución de comandos de soporte."
+    },
+    "corpoelect": {
+      "position": "Fullstack Developer",
+      "duration": "1 año",
+      "logro": "Reducción de tiempo de generación de reportes.",
+      "f1": "Diseño, maquetación y desarrollo de una aplicación web para la gestión de flota vehicular (más de 150 vehículos).",
+      "f2": "Implementación de módulos para la compresión de imágenes y la generación de nombres únicos para archivos subidos.",
+      "f3": "Desarrollo de un sistema de jerarquías y autenticación de usuarios."
+    },
+    "zippitech": {
+      "position": "Desarrollador Web",
+      "duration": "4 meses",
+      "impacto": "Garantizó la funcionalidad y la integridad de los datos de la plataforma al corregir bugs críticos.",
+      "f1": "Desarrollo de 15-18 endpoints para diversas funcionalidades de la aplicación.",
+      "f2": "Corrección de bugs críticos y depuración del código en los módulos principales (reportes y tickets)."
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "interpersonal": {
+      "orientation": "Comunicación y Adaptabilidad Global",
+      "desc": "Colaboración profesional y comunicación efectiva en entornos ágiles y con clientes internacionales.",
+      "s1": "Liderazgo en Trabajo en Equipo y Agilidad (Scrum)",
+      "s2": "Inglés Bilingüe C2 (Colaboración Internacional)",
+      "s3": "Análisis Estratégico y Resolución de Problemas",
+      "s4": "Versatilidad en Servicios (Clientes USA/UE/COL)"
+    },
+    "technical": {
+      "orientation": "Full-stack: Frontend, Backend y DevOps",
+      "desc": "Experiencia integral en el desarrollo de aplicaciones robustas, desde la interfaz hasta la infraestructura.",
+      "s1": "Especialización Frontend Vue.js/JavaScript",
+      "s2": "Backend Robusto: PHP, Laravel, Symfony y PostgreSQL",
+      "s3": "Manejo del Código (Git/GitHub) y Contenedores Docker",
+      "s4": "Optimización de Rendimiento (AJAX, Axios, Endpoints)"
+    },
+    "efficiency": {
+      "orientation": "Eficiencia, UX/UI y Soporte Proactivo",
+      "desc": "Historial comprobado en la optimización de procesos y la entrega de soluciones centradas en el valor y la estabilidad del sistema.",
+      "s1": "Impacto Cuantificable: Reducción de Tiempos de generación de Reportes",
+      "s2": "Diseño Centrado en el Usuario (Responsive Design)",
+      "s3": "Soporte y Estabilidad: Resolución de Bugs Críticos en Plazos Cortos",
+      "s4": "Seguridad: Implementación de Jerarquías y Autenticación"
+    }
   }
 }

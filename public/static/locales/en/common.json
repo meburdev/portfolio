@@ -1,12 +1,66 @@
 {
+  "developer": "Full-stack Developer",
   "education": "Education",
-  "experience": "Experience",
   "contact-me": "Contact me",
-  "skills": "Skills",
+  "skills-include": "Skills used",
   "personal-profile": "Full-stack Developer with 2+ years of experience, specializing in Frontend/Backend. My background in development and support ensures system stability and proactive resolution.",
   "language.selector": "Select Language",
   "flag": {
     "us": "Spanish",
     "es": "English"
+  },
+  "experience": {
+    "title": "Experience",
+    "bitecla": {
+      "position": "Web Developer (Support)",
+      "duration": "2 years and 6 months",
+      "subcontracted": "Subcontracted for Singular Factory de Canarias (Spain), providing service to international clients like Planimatik (US and EU) and Transborder (Colombia).",
+      "f1": "Developed new functionalities and modules for the application, focusing on the Front-end.",
+      "f2": "Corrected system errors (bugs), improving usability and performance.",
+      "f3": "Managed and manipulated databases for data export to clients.",
+      "f4": "Accessed and managed deployed servers to execute support commands."
+    },
+    "corpoelec": {
+      "position": "Fullstack Developer",
+      "duration": "1 year",
+      "logro": "Reduced report generation time by 80% to 90% (from 20-35 min to 5 min) using PhpSpreadSheet and FPDF.",
+      "f1": "Designed, mocked up, and developed a web application for vehicle fleet management (150+ vehicles).",
+      "f2": "Implemented modules for image compression and the generation of unique names for uploaded files.",
+      "f3": "Developed a system for user hierarchies and authentication."
+    },
+    "zippitech": {
+      "position": "Web Developer",
+      "duration": "4 months",
+      "impacto": "Guaranteed the platform's functionality and data integrity by correcting critical bugs.",
+      "f1": "Developed 15-18 endpoints for various application functionalities.",
+      "f2": "Corrected critical bugs and debugged code in the main modules (reports and tickets)."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "interpersonal": {
+      "orientation": "Communication & Global Adaptability",
+      "desc": "Professional collaboration and effective communication within agile environments and with international clients.",
+      "s1": "Teamwork Leadership and Agile Delivery (Scrum)",
+      "s2": "Bilingual English C2 (International Collaboration)",
+      "s3": "Strategic Analysis & Complex Problem Solving",
+      "s4": "Service Versatility (US/EU/COL Clients)"
+    },
+    "technical": {
+      "orientation": "Full-stack: Frontend, Backend & DevOps",
+      "desc": "Comprehensive experience in developing robust applications, from interface design to infrastructure.",
+      "s1": "Frontend Specialization: Vue.js/JavaScript",
+      "s2": "Robust Backend: PHP, Laravel, Symfony and PostgreSQL",
+      "s3": "Code Management (Git/GitHub) and Docker Containers",
+      "s4": "Performance Optimization (AJAX, Axios, Endpoints)"
+    },
+    "efficiency": {
+      "orientation": "Efficiency, UX/UI & Proactive Support",
+      "desc": "Proven track record in process optimization and delivering solutions focused on business value and system stability.",
+      "s1": "Quantifiable Impact: Reduced Report Generation Times",
+      "s2": "User-Centric Design (Responsive Design)",
+      "s3": "Support & Stability: Critical Bug Resolution on Short Notice",
+      "s4": "Security: Hierarchy and Authentication Systems"
+    }
   }
 }

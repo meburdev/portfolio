@@ -2,13 +2,27 @@
 export type ExperienceItem = {
   id: number;
   company: string;
-  companyUrl?: string; 
+  companyUrl?: string;
   position: string;
   startDate: string;
-  endDate: string | null; 
-  descriptionKey: string; 
+  endDate: string | null;
   technologies: string[];
+  companyLocation: string;
+  duration: string;
+  subcontractedFor?: string;
+  logroCuantificable?: string;
+  impacto?: string;
+  functions: string[];
+  logro?: string;
 };
 
-/** Define el tipo para el conjunto de toda la experiencia */
 export type ExperienceData = ExperienceItem[];
+
+export type SkillItem = {
+  id: number;
+  skillOrientation: string;
+  description: string;
+  detailedSkills: string[];
+};
+
+export type SkillData = SkillItem[];

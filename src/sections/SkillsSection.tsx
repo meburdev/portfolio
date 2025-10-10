@@ -1,30 +1,34 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import DefaultBodySection from "@/components/DefaultBodySection";
-import { MOCK_EXPERIENCE } from "@/data/experience"; // Carga los datos mock
+import { MOCK_SKILLS } from "@/data/skills"; // Carga los datos mock
 
 const SkillsSection: React.FC = () => {
   const { t } = useTranslation("common");
+  const technicalSkills = MOCK_SKILLS[0];
+  const efficiencySkills = MOCK_SKILLS[1];
+  const interpersonalSkills = MOCK_SKILLS[2];
 
   const skillsLeft = (
     <div>
       <div>
-        <h2 className="text-md text-zinc-500 pb-5">Project Management</h2>
-        <ul className="list-disc list-inside pb-12">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <h2 className="text-md text-zinc-500 pb-5">
+          {t(technicalSkills.skillOrientation)}
+        </h2>
+        <ul className="list-disc list-inside pb-12 pl-5 pt-5">
+          {technicalSkills.detailedSkills.map((skill, index) => (
+            <li key={index}>{t(skill)}</li>
+          ))}
         </ul>
       </div>
       <div>
         <h2 className="text-md text-zinc-500 pb-5">
-          Communication & Collaboration
+          {t(efficiencySkills.skillOrientation)}
         </h2>
-        <ul className="list-disc list-inside pb-12">
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <ul className="list-disc list-inside pb-12 pl-5 pt-5">
+          {efficiencySkills.detailedSkills.map((skill, index) => (
+            <li key={index}>{t(skill)}</li>
+          ))}
         </ul>
       </div>
     </div>
@@ -33,20 +37,19 @@ const SkillsSection: React.FC = () => {
   const skillsRight = (
     <div>
       <h2 className="text-md text-zinc-500 pb-5">
-        Strategic & Creative Oversight
+        {t(interpersonalSkills.skillOrientation)}
       </h2>
-      <ul className="list-disc list-inside pb-12">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <ul className="list-disc list-inside pb-12 pl-5 pt-5">
+        {interpersonalSkills.detailedSkills.map((skill, index) => (
+          <li key={index}>{t(skill)}</li>
+        ))}
       </ul>
     </div>
   );
 
   return (
     <section id="skills" className="border-t border-zinc-700">
-      <h1 className="text-xs font-semibold pt-5 pb-10">{t("skills")}</h1>
+      <h1 className="text-xs font-semibold pt-5 pb-10">{t("skills-title")}</h1>
       <DefaultBodySection
         borderTop={false}
         leftContent={skillsLeft}
