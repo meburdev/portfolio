@@ -62,5 +62,28 @@
       "s3": "Soporte y Estabilidad: Resolución de Bugs Críticos en Plazos Cortos",
       "s4": "Seguridad: Implementación de Jerarquías y Autenticación"
     }
+  },
+  "certifications": {
+    "title": "Certificaciones y Educación",
+    "degree": {
+      "name": "Título de Ingeniero de Sistemas",
+      "institution": "UNEFA"
+    },
+    "english-2025": {
+      "name": "Certificado de Inglés C2 Proficiente (84/100)",
+      "institution": "EF SET"
+    },
+    "mobile-apps": {
+      "name": "Curso de Desarrollo de Apps Móviles (40 h)",
+      "institution": "Google Actívate - Universidad Complutense de Madrid"
+    },
+    "web-i": {
+      "name": "Curso de Introducción al Desarrollo Web II (40 h)",
+      "institution": "Google Actívate - Universidad de Alicante"
+    },
+    "web-ii": {
+      "name": "Curso de Introducción al Desarrollo Web I (40 h)",
+      "institution": "Google Actívate - Universidad de Alicante"
+    }
   }
 }

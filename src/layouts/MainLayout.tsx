@@ -11,7 +11,7 @@ export default function MainLayout({ children }: Props) {
   return (
     <div className="min-h-screen flex flex-col p-4 bg-black text-white">
       <FloatingIcon />
-      <div className="max-w-[80%] mx-auto">
+      <div className="max-w-[90%] mx-auto">
         <HeaderComponent />
         <div className="flex flex-col md:flex-row w-full gap-4 mb-4">
           <SideBarComponent />

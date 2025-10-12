@@ -1,4 +1,3 @@
-/** Define el tipo para un solo elemento de experiencia laboral */
 export type ExperienceItem = {
   id: number;
   company: string;
@@ -26,3 +25,12 @@ export type SkillItem = {
 };
 
 export type SkillData = SkillItem[];
+
+export type EducationItem = {
+  id: number;
+  name: string;
+  institution: string;
+  certificateUrl?: string;
+};
+
+export type EducationData = EducationItem[];

@@ -62,5 +62,28 @@
       "s3": "Support & Stability: Critical Bug Resolution on Short Notice",
       "s4": "Security: Hierarchy and Authentication Systems"
     }
+  },
+  "certifications": {
+    "title": "Certifications and Education",
+    "degree": {
+      "name": "Systems Engineer Degree",
+      "institution": "UNEFA"
+    },
+    "english-2025": {
+      "name": "C2 Proficient English Certificate (84/100)",
+      "institution": "EF SET"
+    },
+    "mobile-apps": {
+      "name": "Mobile App Development Course (40 h)",
+      "institution": "Google Actívate - Complutense University of Madrid"
+    },
+    "web-i": {
+      "name": "Introduction to Web Development II Course (40 h)",
+      "institution": "Google Actívate - University of Alicante"
+    },
+    "web-ii": {
+      "name": "Introduction to Web Development I Course (40 h)",
+      "institution": "Google Actívate - University of Alicante"
+    }
   }
 }

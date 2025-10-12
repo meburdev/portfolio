@@ -1,36 +1,52 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import DefaultBodySection from "@/components/DefaultBodySection";
-import { MOCK_EXPERIENCE } from "@/data/experience"; // Carga los datos mock
+import { MOCK_EDUCATION } from "@/data/education";
 
 const SkillsSection: React.FC = () => {
   const { t } = useTranslation("common");
 
-  const skillsLeft = (
+  const midPoint = Math.ceil(MOCK_EDUCATION.length / 2);
+
+  const educationItemsLeft = MOCK_EDUCATION.slice(0, midPoint);
+
+  const educationItemsRight = MOCK_EDUCATION.slice(midPoint);
+
+  const educationLeft = (
     <div>
-      <div></div>
+      <ul className="list-inside pb-12">
+        {educationItemsLeft.map((element, index) => (
+          <li key={element.id || index}>
+            <div>{t(element.name)}</div>
+            <div>{t(element.institution)}</div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 
-  const skillsRight = (
+  const educationRight = (
     <div>
-      <h2 className="text-md text-zinc-500 pb-5">Certifications</h2>
-      <ul className="list-disc list-inside pb-12">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <ul className="list-inside pb-12">
+        {educationItemsRight.map((educationItem, index) => (
+          <li key={educationItem.id || index}>
+            <div>{t(educationItem.name)}</div>
+            <div>{t(educationItem.institution)}</div>
+          </li>
+        ))}
       </ul>
     </div>
   );
 
   return (
     <section id="skills" className="border-t border-zinc-700">
-      <h1 className="text-xs font-semibold pt-5 pb-10">{t("education")}</h1>
+      <h1 className="text-xs font-semibold pt-5 pb-10">
+        {t("certifications.title")}
+      </h1>
       <DefaultBodySection
         borderTop={false}
-        leftContent={skillsLeft}
-        rightContent={skillsRight}
+        leftContent={educationLeft}
+        rightContent={educationRight}
       />
     </section>
   );

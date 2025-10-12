@@ -7,7 +7,7 @@ const HeaderComponent: React.FC = () => {
 
   return (
     <header id="header">
-      <div className="flex justify-between text-white min-h-60 w-full pb-5 md:pb-5 px-4 shadow-md h-full">
+      <div className="flex justify-between text-white min-h-50 w-full pb-5 md:pb-5 px-4 shadow-md h-full">
         <div className="text-2xl flex-col space-y-0.5">
           <div className="font-extrabold">Levi Medina,</div>
           <div className="text-gray-400">{t("developer")}</div>
