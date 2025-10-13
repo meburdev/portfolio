@@ -5,11 +5,14 @@ import FloatingIcon from "@/components/FLoatingIcon";
 
 type Props = {
   children?: ReactNode;
+  font: string;
 };
 
-export default function MainLayout({ children }: Props) {
+export default function MainLayout({ children, font }: Props) {
   return (
-    <div className="min-h-screen flex flex-col p-4 bg-black text-white">
+    <div
+      className={`min-h-screen flex flex-col p-4 bg-black text-white ${font}`}
+    >
       <FloatingIcon />
       <div className="max-w-[90%] mx-auto">
         <HeaderComponent />

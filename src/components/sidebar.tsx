@@ -20,7 +20,7 @@ const SideBarComponent: React.FC = () => {
   return (
     <nav
       id="sidebar"
-      className="w-full md:w-2/6 md:sticky md:top-0 self-start flex flex-col pb-5 md:pb-5 px-4 shadow-md h-full border-t border-zinc-700"
+      className="w-full md:w-2/6 md:sticky md:top-0 self-start flex flex-col pb-5 md:pb-5 px-4 shadow-md h-full border-t border-zinc-700 font-inter"
     >
       <div className="text-sm py-6 min-h-50 pr-7">{t("personal-profile")}</div>
 
