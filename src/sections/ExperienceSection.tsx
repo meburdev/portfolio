@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import DefaultBodySection from "@/components/DefaultBodySection";
-import { MOCK_EXPERIENCE } from "@/data/experience"; // Carga los datos mock
+import { MOCK_EXPERIENCE } from "@/data/experience";
 
 const ExperienceSection: React.FC = () => {
   const { t } = useTranslation("common");
@@ -35,7 +35,9 @@ const ExperienceSection: React.FC = () => {
 
         <div className="text-sm pt-5 font-inter">
           <span className="font-semibold">{t("skills-include")}: </span>
-          {element.technologies.join(", ")}
+          <span className="text-zinc-400">
+            {element.technologies.join(", ")}
+          </span>
         </div>
       </div>
     );
