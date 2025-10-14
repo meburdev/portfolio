@@ -14,6 +14,7 @@ export default async function handler(
   const namespace = "common";
   const lang = (lng as string) || "en";
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let t: TFunction = ((key) => key) as TFunction;
 
   try {
