@@ -1,7 +1,7 @@
 import SideBarComponent from "@/components/sidebar";
 import HeaderComponent from "@/components/header";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import FloatingIcon from "@/components/FloatingIcon";
+import FloatingIcon from "@/components/FloatingIconLanguage";
 import type { ReactNode } from "react";
 
 type Props = {
