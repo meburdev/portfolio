@@ -14,7 +14,7 @@ export default async function handler(
   const namespace = "common";
   const lang = (lng as string) || "en";
 
-  let t: TFunction = (key) => key;
+  let t: TFunction = ((key: any) => key) as TFunction;
 
   try {
     await serverSideTranslations(lang, [namespace], null, ["en", "es"]);
