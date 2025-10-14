@@ -1,8 +1,8 @@
 import SideBarComponent from "@/components/sidebar";
 import type { ReactNode } from "react";
 import HeaderComponent from "@/components/header";
-import FloatingIconLanguage from "@/components/FloatingIconLanguage";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import FloatingIcon from "@/components/FloatingIcon";
 
 type Props = {
   children?: ReactNode;
@@ -14,7 +14,7 @@ export default function MainLayout({ children, font }: Props) {
     <div
       className={`min-h-screen flex flex-col p-4 bg-black text-white ${font}`}
     >
-      <FloatingIconLanguage />
+      <FloatingIcon />
       <ScrollToTopButton />
       <div className="max-w-[90%] mx-auto">
         <HeaderComponent />
