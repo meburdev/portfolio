@@ -12,7 +12,7 @@ type Props = {
 export default function MainLayout({ children, font }: Props) {
   return (
     <div
-      className={`min-h-screen flex flex-col p-4 bg-black text-white ${font}`}
+      className={`min-h-screen flex flex-col bg-black text-white  p-4 ${font}`}
     >
       <FloatingIcon />
       <ScrollToTopButton />
