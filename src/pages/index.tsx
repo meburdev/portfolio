@@ -21,7 +21,6 @@ const HomePage: NextPage = () => {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      // Carga el archivo common.json para el idioma detectado o el idioma por defecto ('en')
       ...(await serverSideTranslations(locale ?? "en", ["common"])),
     },
   };

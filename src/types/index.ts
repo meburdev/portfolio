@@ -31,7 +31,7 @@ export type EducationItem = {
   name: string;
   institution: string;
   year: string;
-  certificateUrl: string;
+  docName: string;
 };
 
 export type EducationData = EducationItem[];

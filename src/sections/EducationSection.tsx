@@ -3,9 +3,11 @@ import { useTranslation } from "next-i18next";
 import DefaultBodySection from "@/components/DefaultBodySection";
 import { MOCK_EDUCATION } from "@/data/education";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const SkillsSection: React.FC = () => {
   const { t } = useTranslation("common");
+  const { locale } = useRouter();
 
   const midPoint = Math.ceil(MOCK_EDUCATION.length / 2);
   const educationItemsLeft = MOCK_EDUCATION.slice(0, midPoint);
@@ -17,7 +19,7 @@ const SkillsSection: React.FC = () => {
         {educationItemsLeft.map((educationItem, index) => (
           <li key={index} className="items-start font-inter">
             <Link
-              href={`/api/download?file=${educationItem.certificateUrl}&view=true`}
+              href={`/api/preview?file=${educationItem.docName}&lng=${locale}&preview=true`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,7 +45,7 @@ const SkillsSection: React.FC = () => {
             className="items-start font-inter transition-colors duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-white"
           >
             <Link
-              href={`/api/download?file=${educationItem.certificateUrl}&view=true`}
+              href={`/api/preview?file=${educationItem.docName}&lng=${locale}&preview=true`}
               target="_blank"
               rel="noopener noreferrer"
             >

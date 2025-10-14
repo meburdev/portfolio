@@ -1,4 +1,15 @@
 {
+  "files": {
+    "EF_SET_English_Test_Certificate_2025.pdf": "EF_SET_English_Test_Certificate_2025",
+    "Google_Activate_Introduction_to_Web_Development_I.pdf": "Google_Activate_Introduction_to_Web_Development_I",
+    "Google_Activate_Introduction_to_Web_Development_II.pdf": "Google_Activate_Introduction_to_Web_Development_II",
+    "Google_Activate_Mobile_App_Development.pdf": "Google_Activate_Mobile_App_Development",
+    "UNEFA_Systems_Engineering_Degree.pdf": "UNEFA_Systems_Engineering_Degree"
+  },
+  "validations": {
+    "file-name": "Missing file name",
+    "access-denied": "File not found or access denied"
+  },
   "developer": "Full-stack Developer",
   "education": "Education",
   "contact-me": "Contact me",

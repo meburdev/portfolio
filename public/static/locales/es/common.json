@@ -1,4 +1,15 @@
 {
+  "files": {
+    "EF_SET_English_Test_Certificate_2025.pdf": "Certificado_de_Examen_de_Inglés_EF_SET_2025",
+    "Google_Activate_Introduction_to_Web_Development_I.pdf": "Google_Actívate_Introducción_al_Desarrollo_Web_I",
+    "Google_Activate_Introduction_to_Web_Development_II.pdf": "Google_Actívate_Introducción_al_Desarrollo_Web_II",
+    "Google_Activate_Mobile_App_Development.pdf": "Google_Activate_Desarrollo_de_Aplicaciones_Moviles",
+    "UNEFA_Systems_Engineering_Degree.pdf": "UNEFA_Titulo_Ingeniero_de_Sistemas"
+  },
+  "validations": {
+    "file-name": "Falta el nombre del archivo.",
+    "access-denied": "Archivo no encontrado o acceso denegado."
+  },
   "developer": "Desarrollador Full-stack",
   "education": "Educación",
   "contact-me": "Contactame",
@@ -20,7 +31,7 @@
       "f3": "Gestión y manipulación de bases de datos para exportación de data a clientes.",
       "f4": "Acceso y manejo de servidores desplegados para la ejecución de comandos de soporte."
     },
-    "corpoelect": {
+    "corpoelec": {
       "position": "Fullstack Developer",
       "duration": "1 año",
       "logro": "Reducción de tiempo de generación de reportes.",
