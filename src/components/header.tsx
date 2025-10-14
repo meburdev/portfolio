@@ -63,7 +63,6 @@ const HeaderComponent: React.FC = () => {
                     key="about-content" // 2. AÑADIMOS UNA KEY ÚNICA
                     initial="hidden"
                     animate="visible"
-                    exit="exit" // 3. LE INDICAMOS QUE USE EL ESTADO 'exit'
                     variants={slideAnimation}
                     className="flex items-center justify-start"
                   >
