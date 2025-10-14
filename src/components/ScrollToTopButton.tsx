@@ -5,9 +5,7 @@ const SCROLL_THRESHOLD = 245; // Distancia en píxeles para mostrar el botón
 const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Lógica para mostrar/ocultar el botón
   const handleScroll = useCallback(() => {
-    // Si la posición vertical es mayor a 300px, lo hacemos visible
     const newVisibility = window.scrollY > SCROLL_THRESHOLD;
     setIsVisible(newVisibility);
   }, []);
@@ -15,7 +13,7 @@ const ScrollToTopButton: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Desplazamiento suave
+      behavior: "smooth",
     });
   };
 
@@ -28,7 +26,6 @@ const ScrollToTopButton: React.FC = () => {
     };
   }, [handleScroll]);
 
-  // Si no es visible, no renderizamos nada (o podrías animarlo fuera de la pantalla)
   if (!isVisible) {
     return null;
   }

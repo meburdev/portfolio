@@ -1,6 +1,7 @@
 {
+  "profile-image": "Profile Image",
   "about": "About",
-  "about-me-text": "English C2 Proficient, Systems Engineer specializing in Full-stack development (Vue.js, Laravel) and support. My focus is end-to-end problem-solving, ensuring platform stability by resolving critical bugs and collaborating effectively with international teams in the US and EU",
+  "about-me-text": "English C2 Proficient, Systems Engineer specializing in Full-stack development (Vue.js, Next.js, Laravel) and support. My focus is end-to-end problem-solving, ensuring platform stability by resolving critical bugs and collaborating effectively with international teams in the US and EU",
   "files": {
     "EF_SET_English_Test_Certificate_2025.pdf": "EF_SET_English_Test_Certificate_2025",
     "Google_Activate_Introduction_to_Web_Development_I.pdf": "Google_Activate_Introduction_to_Web_Development_I",

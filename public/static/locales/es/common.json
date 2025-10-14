@@ -1,6 +1,7 @@
 {
+  "profile-image": "Imagen de Perfil",
   "about": "Sobre mí",
-  "about-me-text": "Ingeniero de Sistemas con dominio de Inglés C2, especializado en desarrollo Full-stack (Vue.js, Laravel) y soporte. Me centro en la resolución de problemas end-to-end, garantizando la estabilidad de la plataforma y colaborando eficazmente con equipos internacionales en EE. UU. y la UE",
+  "about-me-text": "Ingeniero de Sistemas con dominio de Inglés C2, especializado en desarrollo Full-stack (Vue.js, Next.js, Laravel) y soporte. Me centro en la resolución de problemas end-to-end, garantizando la estabilidad de la plataforma y colaborando eficazmente con equipos internacionales en EE. UU. y la UE",
   "files": {
     "EF_SET_English_Test_Certificate_2025.pdf": "Certificado_de_Examen_de_Inglés_EF_SET_2025",
     "Google_Activate_Introduction_to_Web_Development_I.pdf": "Google_Actívate_Introducción_al_Desarrollo_Web_I",
