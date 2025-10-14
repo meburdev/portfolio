@@ -17,7 +17,7 @@ const HeaderComponent: React.FC = () => {
       opacity: 1,
       transition: {
         duration: 0.8, // Duración de 0.8 segundos
-        ease: "easeOut", // Tipo de aceleración para un movimiento suave
+        ease: [0.6, 0.01, 0.9, 0.95],
       },
     },
     // Estado para salir (opcional, si se oculta de nuevo)
@@ -27,7 +27,7 @@ const HeaderComponent: React.FC = () => {
       opacity: 0,
       transition: {
         duration: 0.8, // Duración de salida: 0.3 segundos (mucho más rápido)
-        ease: "easeIn", // Usamos 'easeIn' para que la desaparición se sienta más abrupta/rápida
+        ease: [0.42, 0, 1, 1], // Esto se asemeja a "easeIn"
       },
     },
   };
