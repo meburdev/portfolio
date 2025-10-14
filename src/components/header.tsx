@@ -8,7 +8,7 @@ const HeaderComponent: React.FC = () => {
   const [showAbout, setShowAbout] = useState(false);
 
   const slideAnimation = {
-    // Estado inicial (la animación empieza "fuera" de la vista, arriba y a la derecha)
+    // Estado inicial (la animación empieza "fuera" de la vista, arriba y a la derecha) a
     hidden: { x: 50, y: -20, opacity: 0 },
     // Estado final (la animación termina en su posición normal)
     visible: {
