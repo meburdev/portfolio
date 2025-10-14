@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion"; // <-- CAMBIO AQUÍ
+import { motion, AnimatePresence, Variants } from "framer-motion"; // <-- CAMBIO AQUÍ
 import { useTranslation } from "next-i18next";
 
 const HeaderComponent: React.FC = () => {
   const { t } = useTranslation("common");
   const [showAbout, setShowAbout] = useState(false);
 
-  const slideAnimation = {
+  const slideAnimation: Variants = {
     // Estado inicial (la animación empieza "fuera" de la vista, arriba y a la derecha) a
     hidden: { x: 50, y: -20, opacity: 0 },
     // Estado final (la animación termina en su posición normal)
@@ -17,7 +17,7 @@ const HeaderComponent: React.FC = () => {
       opacity: 1,
       transition: {
         duration: 0.8, // Duración de 0.8 segundos
-        ease: [0.6, 0.01, 0.9, 0.95],
+        ease: "easeOut",
       },
     },
     // Estado para salir (opcional, si se oculta de nuevo)
@@ -27,7 +27,7 @@ const HeaderComponent: React.FC = () => {
       opacity: 0,
       transition: {
         duration: 0.8, // Duración de salida: 0.3 segundos (mucho más rápido)
-        ease: [0.42, 0, 1, 1], // Esto se asemeja a "easeIn"
+        ease: "easeIn", // Esto se asemeja a "easeIn"
       },
     },
   };
