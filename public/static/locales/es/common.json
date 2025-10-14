@@ -92,12 +92,32 @@
       "institution": "Google Actívate - Universidad Complutense de Madrid"
     },
     "web-i": {
-      "name": "Curso de Introducción al Desarrollo Web II (40 h)",
+      "name": "Curso de Introducción al Desarrollo Web I (40 h)",
       "institution": "Google Actívate - Universidad de Alicante"
     },
     "web-ii": {
-      "name": "Curso de Introducción al Desarrollo Web I (40 h)",
+      "name": "Curso de Introducción al Desarrollo Web II (40 h)",
       "institution": "Google Actívate - Universidad de Alicante"
+    },
+    "backend-node-js": {
+      "name": "Curso de Backend con Node.js: API REST con Express.js",
+      "institution": "Platzi"
+    },
+    "vue-practical": {
+      "name": "Curso Práctico de Vue.js",
+      "institution": "Platzi"
+    },
+    "git-github": {
+      "name": "Curso Profesional de Git y GitHub",
+      "institution": "Platzi"
+    },
+    "vue-intro": {
+      "name": "Curso de Vue.js: Introducción y Fundamentos",
+      "institution": "Platzi"
+    },
+    "basic-computing": {
+      "name": "Curso de Computación Básica",
+      "institution": "Platzi"
     }
   }
 }
