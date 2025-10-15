@@ -23,8 +23,9 @@ const SkillsSection: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="hover:text-white hover:text-glow-yellow-lg">
-                {t(educationItem.name)}
+              <div className="hover:text-black dark:hover:text-white hover:text-glow-yellow-lg">
+                {t(educationItem.name)}{" "}
+                <span className="font-bold text-xs"> ↗</span>
               </div>
               <div className="text-xs text-zinc-500">
                 {t(educationItem.institution)}
@@ -50,7 +51,8 @@ const SkillsSection: React.FC = () => {
               rel="noopener noreferrer"
             >
               <div className="hover:text-white hover:text-glow-yellow-lg">
-                {t(educationItem.name)}
+                {t(educationItem.name)}{" "}
+                <span className="font-bold text-xs"> ↗</span>
               </div>
               <div className="text-xs text-zinc-500">
                 {t(educationItem.institution)}
@@ -63,7 +65,10 @@ const SkillsSection: React.FC = () => {
   );
 
   return (
-    <section id="skills" className="border-t border-zinc-700 font-inter pb-12">
+    <section
+      id="skills"
+      className="border-t border-zinc-700 font-inter pb-12 shadow-md p-5"
+    >
       <h1 className="text-xs font-semibold pt-5 pb-5 ">
         {t("certifications.title")}
       </h1>

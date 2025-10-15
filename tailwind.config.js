@@ -3,6 +3,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // 🚨 ¡REVISA ESTA SECCIÓN CUIDADOSAMENTE! 🚨
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}", // Para el App Router
     "./pages/**/*.{js,ts,jsx,tsx,mdx}", // Para el Pages Router

@@ -47,9 +47,9 @@ const FloatingIcon: React.FC<DefaultBodySectionProps> = () => {
   );
 
   return (
-    <div className="scale-75 fixed bottom-6 left-4 z-50 rounded-full shadow-lg cursor-pointer transform-gpu transition-transform duration-300 hover:scale-100">
-      <div className="block" onClick={toggleFlag}>
-        <div className="relative min-w-[80px] h-8">
+    <div className="h-[60px] w-[110px] flex justify-center rounded-md m-auto scale-75 fixed bottom-4 left-4 z-50 cursor-pointer transform-gpu transition-transform duration-300 hover:scale-100 bg-white dark:bg-black shadow-md">
+      <div className="block m-auto" onClick={toggleFlag}>
+        <div className="relative min-w-[80px] h-8 pt-5">
           <div
             className={`flex justify-between absolute inset-0 transition-opacity duration-500 ${
               selectedLanguage.lang === "en"
@@ -57,7 +57,7 @@ const FloatingIcon: React.FC<DefaultBodySectionProps> = () => {
                 : "opacity-0 pointer-events-none"
             }`}
           >
-            <div className="m-auto">EN</div>
+            <div className="m-auto text-black dark:text-white">EN</div>
             <Image
               src={usFlag.src}
               alt={t(`flag.${usFlag.country}`)}

@@ -36,8 +36,8 @@ const ScrollToTopButton: React.FC = () => {
       aria-label="Volver arriba"
       className="
         fixed bottom-6 right-6 z-50 
-        p-4 rounded-full text-white 
-        shadow-xl hover:scale-105 
+        p-4 rounded-full text-black dark:text-white
+        shadow-xl hover:scale-105 bg-white dark:bg-black
         transition-all duration-300 ease-in-out
       "
     >

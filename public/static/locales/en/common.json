@@ -1,4 +1,8 @@
 {
+  "change-to-light": "Change to light mode",
+  "change-to-dark": "Change to dark mode",
+  "light-mode": "Light Mode",
+  "dark-mode": "Dark Mode",
   "profile-image": "Profile Image",
   "about": "About",
   "about-me-text": "English C2 Proficient, Systems Engineer specializing in Full-stack development (Vue.js, Next.js, Laravel) and support. My focus is end-to-end problem-solving, ensuring platform stability by resolving critical bugs and collaborating effectively with international teams in the US and EU",

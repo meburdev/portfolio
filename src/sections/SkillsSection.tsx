@@ -54,7 +54,7 @@ const SkillsSection: React.FC = () => {
   );
 
   return (
-    <section id="skills" className="border-t border-zinc-700">
+    <section id="skills" className="border-t border-zinc-700 shadow-md p-5">
       <h1 className="text-xs font-semibold pt-5 pb-5">{t("skills.title")}</h1>
       <DefaultBodySection
         borderTop={false}

@@ -46,7 +46,10 @@ const ExperienceSection: React.FC = () => {
   });
 
   return (
-    <section id="experience" className="border-t border-zinc-700 font-inter">
+    <section
+      id="experience"
+      className="border-t border-zinc-700 font-inter shadow-md p-5"
+    >
       <h1 className="text-xs font-extrabold pt-5 pb-10">
         {t("experience.title")}
       </h1>
