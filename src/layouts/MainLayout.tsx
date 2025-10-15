@@ -5,7 +5,7 @@ import FloatingIcon from "@/components/FloatingIconLanguage";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
-import Head from "next/head"; // 🚀 1. Importar el componente Head
+import Head from "next/head";
 
 type Props = {
   children?: ReactNode;
@@ -18,11 +18,8 @@ export default function MainLayout({ children, font }: Props) {
   return (
     <>
       <Head>
-        <title>Levi J. Medina | Desarrollador Front-end & MERN</title>
-        <meta
-          name="description"
-          content="Portafolio profesional de Levi Josue Medina, desarrollador con experiencia en React, Next.js y el stack MERN."
-        />
+        <title>Levi J. Medina | {t("developer")}</title>
+        <meta name="description" content={t("meta-content")} />
         <link rel="icon" href="/icons/mb.svg" type="image/svg+xml" />
       </Head>
       <div
