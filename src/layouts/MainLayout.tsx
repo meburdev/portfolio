@@ -23,7 +23,7 @@ export default function MainLayout({ children, font }: Props) {
         <link rel="icon" href="/icons/mb.svg" type="image/svg+xml" />
       </Head>
       <div
-        className={`min-h-screen flex flex-col bg-white text-black dark:text-white dark:bg-black  p-4 ${font}`}
+        className={`min-h-screen flex flex-col bg-white text-black dark:text-gray-100 dark:bg-gray-950 p-4 ${font}`}
       >
         <FloatingIcon />
         <ScrollToTopButton />

@@ -38,7 +38,7 @@ const HeaderComponent: React.FC = () => {
 
   return (
     <header id="header">
-      <div className="xl:flex justify-between text-black dark:text-white min-h-60 w-full pb-5 pt-10 px-8 md:pb-5  shadow-md h-full">
+      <div className="xl:flex justify-between text-black dark:text-gray-100 min-h-60 w-full pb-5 pt-10 px-8 md:pb-5  shadow-md h-full">
         <div className="text-2xl flex-col w-full xl:w-3/12">
           <div
             className="font-extrabold"

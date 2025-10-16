@@ -47,7 +47,7 @@ const FloatingIcon: React.FC<DefaultBodySectionProps> = () => {
   );
 
   return (
-    <div className="h-[60px] w-[110px] flex justify-center rounded-md m-auto scale-75 fixed bottom-4 left-4 z-50 cursor-pointer transform-gpu transition-transform duration-300 hover:scale-100 bg-white dark:bg-black shadow-md">
+    <div className="h-[60px] w-[110px] flex justify-center rounded-md m-auto scale-75 fixed bottom-4 left-4 z-50 cursor-pointer transform-gpu transition-transform duration-300 hover:scale-100 bg-white dark:bg-gray-950 shadow-md">
       <div className="block m-auto" onClick={toggleFlag}>
         <div className="relative min-w-[80px] h-8 pt-5">
           <div
@@ -57,7 +57,7 @@ const FloatingIcon: React.FC<DefaultBodySectionProps> = () => {
                 : "opacity-0 pointer-events-none"
             }`}
           >
-            <div className="m-auto text-black dark:text-white">EN</div>
+            <div className="m-auto text-black dark:text-gray-100">EN</div>
             <Image
               src={usFlag.src}
               alt={t(`flag.${usFlag.country}`)}
