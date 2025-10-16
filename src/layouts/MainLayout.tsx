@@ -42,8 +42,12 @@ export default function MainLayout({ children, font }: Props) {
                 href="mailto:mebur.dev@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-zinc-500 transition-colors duration-100 ease-out"
               >
                 {t("contact-me")}
+                <span className="pl-1 font-extrabold text-base text-zinc-300 dark:text-zinc-700">
+                  ↗
+                </span>
               </Link>
             </div>
           </footer>

@@ -25,7 +25,7 @@ const SkillsSection: React.FC = () => {
             >
               <div className="hover:text-black dark:hover:text-white hover:text-glow-yellow-lg">
                 {t(educationItem.name)}{" "}
-                <span className="font-bold text-xs"> ↗</span>
+                <span className="font-bold text-xs text-zinc-400"> ↗</span>
               </div>
               <div className="text-xs text-zinc-500">
                 {t(educationItem.institution)}
@@ -50,9 +50,9 @@ const SkillsSection: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="hover:text-white hover:text-glow-yellow-lg">
-                {t(educationItem.name)}{" "}
-                <span className="font-bold text-xs"> ↗</span>
+              <div className="hover:text-black dark:hover:text-white hover:text-glow-yellow-lg">
+                {t(educationItem.name)}
+                <span className="font-bold text-xs text-zinc-400"> ↗</span>
               </div>
               <div className="text-xs text-zinc-500">
                 {t(educationItem.institution)}
@@ -70,7 +70,7 @@ const SkillsSection: React.FC = () => {
       className="border-t border-zinc-700 font-inter pb-12 shadow-md p-5"
     >
       <h1 className="text-xs font-semibold pt-5 pb-5 ">
-        {t("certifications.title")}
+        {t("certifications.title").toLocaleUpperCase()}
       </h1>
       <DefaultBodySection
         borderTop={false}

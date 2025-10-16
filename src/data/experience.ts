@@ -3,7 +3,7 @@ export const MOCK_EXPERIENCE: ExperienceItem[] = [
   {
     id: 1,
     company: "Bitecla",
-    companyLocation: "San Cristóbal, Venezuela",
+    companyLocation: "Venezuela",
     position: "experience.bitecla.position",
     duration: "experience.bitecla.duration",
     startDate: "Desconocida",
@@ -27,8 +27,8 @@ export const MOCK_EXPERIENCE: ExperienceItem[] = [
   },
   {
     id: 2,
-    company: "CORPOELEC",
-    companyLocation: "Desconocida",
+    company: "Corpoelec",
+    companyLocation: "Venezuela",
     position: "experience.corpoelec.position",
     duration: "experience.corpoelec.duration",
     startDate: "Desconocida",
@@ -55,7 +55,7 @@ export const MOCK_EXPERIENCE: ExperienceItem[] = [
   {
     id: 3,
     company: "Zippitech",
-    companyLocation: "Desconocida",
+    companyLocation: "Venezuela",
     position: "experience.zippitech.position",
     duration: "experience.zippitech.duration",
     startDate: "Desconocida",

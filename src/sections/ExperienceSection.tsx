@@ -17,7 +17,6 @@ const ExperienceSection: React.FC = () => {
         <div className="font-extrabold font-inter">{element.company}</div>
         <div className="py-5 font-semibold text-zinc-500">
           <div>{t(element.position)}</div>
-          <div>{element.companyLocation}</div>
           <div>{t(element.duration)}</div>
         </div>
       </div>
@@ -51,7 +50,7 @@ const ExperienceSection: React.FC = () => {
       className="border-t border-zinc-700 font-inter shadow-md p-5"
     >
       <h1 className="text-xs font-extrabold pt-5 pb-10">
-        {t("experience.title")}
+        {t("experience.title").toLocaleUpperCase()}
       </h1>
       {experienceItems.map((element, index) => (
         <DefaultBodySection
