@@ -1,40 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+### Portfolio of Levi Josué Medina Burguillos (Next.js & Tailwind CSS)
 
-## Getting Started
+Welcome to the official repository for my personal portfolio, built with Next.js, React, and Tailwind CSS. This project serves as a showcase of my Front-end expertise and my ability to integrate modern serverless patterns and external APIs.
 
-First, run the development server:
+The live application can be viewed here: 
 
-```bash
+https://portfolio-levi-medina.vercel.app/es
+
+
+🚀 **Key Features**
+
+*Modern Stack:* Built on Next.js 14 (App Router not used for simplicity) and React for performance and efficient component rendering.
+
+*Aesthetics:* Fully responsive and styled using Tailwind CSS with a mobile-first approach.
+
+*Theming:* Seamless Dark Mode implementation using Tailwind and local state management.
+
+*Internationalization (i18n):* Full multilingual support (English/Spanish) using next-i18next.
+
+*Technical Demos:* Integration of placeholder modules for future technical demos (AI Chatbots, Image Processing, NLP) to demonstrate Back-end logic and API key security (via API Routes in a real deployment).
+
+🛠️ **Technology Stack**
+
+- *Framework:* Next.js
+- *Language:* React / TypeScript
+- *Styling:* Tailwind CSS
+- *Localization:* next-i18next
+- *APIs:* Google Gemini - Integration point for AI demos (Simulated in the current environment).
+- *Database:* Firebase / Firestore (Planned for demos) Real-time data persistence.
+
+⚙️ **Local Setup and Development**
+
+Follow these steps to set up the project locally for development or testing:
+
+Prerequisites
+
+You must have Node.js (v18+) and npm/yarn installed.
+
+1. Cloning the Repository
+```
+git clone https://github.com/meburdev/portfolio.git
+cd portfolio
+```
+
+
+
+2. Installation
+Install all necessary dependencies:
+
+```
+npm install 
+# or 
+yarn install
+```
+
+
+3. Running the Development Server
+
+Start the application in development mode:
+
+```
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be accessible at http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+🌐 **Contact**
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Feel free to connect with me regarding this project or any job opportunities:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+LinkedIn: https://www.linkedin.com/in/levi-josue-medina-burguillos-02b388261/
+Email: mebur.dev@gmail.com
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+© 2025 Levi Josué Medina Burguillos.
