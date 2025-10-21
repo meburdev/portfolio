@@ -4,12 +4,7 @@ import { i18n, useTranslation } from "next-i18next";
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
 
-interface DefaultBodySectionProps {
-  href?: string;
-  label?: string;
-}
-
-const FloatingIcon: React.FC<DefaultBodySectionProps> = () => {
+const FloatingIcon: React.FC = () => {
   const { t } = useTranslation("common");
 
   const usFlag = React.useMemo(
