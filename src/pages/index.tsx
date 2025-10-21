@@ -16,7 +16,7 @@ const HomePage: NextPage = () => {
           className={`p-5 border-zinc-300 shadow-md hover:cursor-pointer ${
             selectedArea === "profile"
               ? "bg-zinc-300 dark:bg-zinc-800"
-              : "hover:bg-zinc-100 dark:hover:bg-zinc-100"
+              : "hover:bg-zinc-100 dark:hover:bg-zinc-700"
           }`}
           style={{ fontFamily: "var(--font-philosopher)" }}
           onClick={() => setSelectedArea("profile")}
@@ -27,7 +27,7 @@ const HomePage: NextPage = () => {
           className={`p-5 border-zinc-300  shadow-md hover:cursor-pointer   ${
             selectedArea !== "profile"
               ? "bg-zinc-300 dark:bg-zinc-800"
-              : "hover:bg-zinc-100 dark:hover:bg-zinc-100"
+              : "hover:bg-zinc-100 dark:hover:bg-zinc-700"
           }`}
           style={{ fontFamily: "var(--font-philosopher)" }}
           onClick={() => setSelectedArea("projects")}
