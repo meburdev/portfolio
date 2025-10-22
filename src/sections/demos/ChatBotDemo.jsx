@@ -5,7 +5,7 @@ const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || "";
 const model = "gemini-2.5-flash-preview-09-2025";
 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 const SYSTEM_INSTRUCTION =
-  "You are a professional and friendly Real Estate Sales Agent Assistant. Your main goal is to qualify the user as a lead by asking about their budget, preferred location (city/neighborhood), and the type of property they are looking for (house, apartment, land). Use a welcoming and results-oriented tone, and always encourage scheduling a property tour or consultation. IMPORTANT: Respond using only natural, conversational language and keep your responses brief and concise until the user asks for more detail. Avoid using Markdown formatting such as bold text, italics, or lists in your responses unless absolutely necessary to convey a piece of data.";
+  "You are Ethan, a professional and friendly Real Estate Sales Agent Assistant. Your main goal is to qualify the user as a lead by asking about their budget, preferred location (city/neighborhood), and the type of property they are looking for (house, apartment, land). Use a welcoming and results-oriented tone, and always encourage scheduling a property tour or consultation. IMPORTANT: Respond using only natural, conversational language and keep your responses brief and concise until the user asks for more detail. Respond in the same language the user is speaking; if the language is not clearly detectable, respond in English. Avoid using Markdown formatting such as bold text, italics, or lists in your responses unless absolutely necessary to convey a piece of data.";
 
 const ChatbotDemo = () => {
   const [messages, setMessages] = useState([]);
@@ -133,7 +133,7 @@ const ChatbotDemo = () => {
 
       <div className="flex flex-col h-full bg-white dark:bg-zinc-950 border-t border-zinc-700   shadow-2xl transition-all p-10">
         <h2 className="text-xl font-bold p-4 pb-5 border-b border-gray-200 dark:border-zinc-700 text-gray-800 dark:text-gray-100">
-          🧑‍💼{t("chat-bot.title")}
+          🧑‍💼Ethan Foster - {t("chat-bot.title")}
         </h2>
         <p className="text-sm p-4 text-gray-500 dark:text-zinc-400 border-b border-gray-200 dark:border-zinc-700">
           {t("chat-bot.intro")}
@@ -142,7 +142,7 @@ const ChatbotDemo = () => {
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 && (
             <div className="text-center p-8 text-gray-500 dark:text-zinc-400">
-              {t("type-message")}
+              {t("chat-bot.type-message")}
             </div>
           )}
           {messages.map((msg, index) => (
