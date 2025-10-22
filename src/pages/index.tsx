@@ -5,9 +5,11 @@ import ChatBotDemo from "@/sections/demos/ChatBotDemo";
 import type { NextPage, GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React, { useState } from "react";
+import { useTranslation } from "next-i18next";
 
 const HomePage: NextPage = () => {
   const [selectedArea, setSelectedArea] = useState("profile");
+  const { t } = useTranslation("common");
 
   return (
     <div>
@@ -21,7 +23,7 @@ const HomePage: NextPage = () => {
           style={{ fontFamily: "var(--font-philosopher)" }}
           onClick={() => setSelectedArea("profile")}
         >
-          PROFILE
+          {t("profile")}
         </div>
         <div
           className={`p-5 border-zinc-300  shadow-md hover:cursor-pointer   ${
@@ -32,7 +34,7 @@ const HomePage: NextPage = () => {
           style={{ fontFamily: "var(--font-philosopher)" }}
           onClick={() => setSelectedArea("projects")}
         >
-          DEMO PROJECTS
+          {t("demo-projects")}
         </div>
       </div>
       {selectedArea === "profile" ? (

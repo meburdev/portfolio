@@ -1,4 +1,14 @@
 {
+  "profile": "Perfil",
+  "demo-projects": "Demos",
+  "chat-bot": {
+    "title": "Asistente de Agente Inmobiliario",
+    "intro": "¡Bienvenido/a! Estoy aquí para ayudarle a encontrar la propiedad perfecta. Para empezar, cuénteme: ¿dónde le gustaría comprar y cuál es su presupuesto?",
+    "conection-failed": "Error: Fallo al conectar con el modelo de IA.",
+    "label-type-message": "Ingresa tu mensaje...",
+    "type-message": "Escribe un mensaje para iniciar el demo..."
+  },
+  "send": "Enviar",
   "meta-content": "Portafolio profesional de Levi Josue Medina, desarrollador Fullstack con experiencia en Vue.js, Symfony, React, Next.js y el stack MERN.",
   "change-to-light": "Cambiar a tema claro",
   "change-to-dark": "Cambiar a tema oscuro",

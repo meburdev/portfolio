@@ -1,4 +1,14 @@
 {
+  "profile": "Profile",
+  "demo-projects": "Demos",
+  "chat-bot": {
+    "title": "Real Estate Sales Assistant",
+    "intro": "Welcome! I'm here to help you find your perfect property. To get started, please tell me: where are you looking to buy and what is your budget?",
+    "conection-failed": "Error: Failed to connect with the AI model",
+    "label-type-message": "Type your message...",
+    "type-message": "Type a message to start the demo..."
+  },
+  "send": "Send",
   "meta-content": "Professional Portfolio of Levi Josue Medina, a Fullstack Developer with experience in Vue.js, Symfony, React, Next.js, and the MERN stack.",
   "change-to-light": "Change to light mode",
   "change-to-dark": "Change to dark mode",
