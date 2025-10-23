@@ -25,7 +25,8 @@ const FloatingIcon: React.FC = () => {
     []
   );
 
-  const [selectedLanguage, setSelectedLanguage] = useState(usFlag);
+  const initialFlag = i18n && i18n.language === "es" ? esFlag : usFlag;
+  const [selectedLanguage, setSelectedLanguage] = useState(initialFlag);
 
   const toggleFlag = useCallback(
     (e?: React.MouseEvent) => {
